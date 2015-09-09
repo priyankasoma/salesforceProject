@@ -23,6 +23,7 @@ trigger studentCount on IntergerValue__c (After insert,After delete,After update
              total_used = (Integer) results[0].get('expr0');
 
              system.debug ('::total_used ::' +total_used );
+              system.debug ('::priyanka ::' +total_used );
          
              MapCount.put(initr.Teacher__c, total_used);
              
