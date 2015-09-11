@@ -1,4 +1,5 @@
-trigger studentCount on IntergerValue__c (After insert,After delete,After update) {
+trigger studentCount on IntergeValue__c (After insert,After delete,After update) {
+trigger studentCount on IntergeValue__c (After insert,After delete,After update) {
  
    public integer total_used;
  
