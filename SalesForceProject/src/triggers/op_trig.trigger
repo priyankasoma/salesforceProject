@@ -1,6 +1,6 @@
 trigger op_trig on Top_X_Designation__c (after insert) {
 List<Top_X_Designation__c> Desig = Trigger.new;
-List<Contact > oppList = new List<Contact >();
+List<Contact > oppList = new Lit<Contact >();
 for(Top_X_Designation__c check :Desig)
 {
 if(check.Type__c == 'Contract Flow Down/Handoff' && check.Document_Attached__c == True)
